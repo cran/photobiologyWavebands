@@ -1,0 +1,305 @@
+%\VignetteEngine{knitr}
+%\VignetteIndexEntry{User Guide}
+%\VignetteDepends{knitr, photobiology, photobiologyWavebands}
+%\VignetteKeyword{misc}
+
+\documentclass{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[unicode=true,pdfusetitle,
+ bookmarks=true,bookmarksnumbered=true,bookmarksopen=true,bookmarksopenlevel=2,
+ breaklinks=false,pdfborder={0 0 1},backref=false,colorlinks=false]
+ {hyperref}
+\usepackage{listings}
+\usepackage{rotating}
+\usepackage{booktabs}
+\usepackage{xspace}
+
+\newcommand{\PB}{\textsf{photobiology}\xspace}
+\newcommand{\PBWB}{\textsf{photobiologyWavebands}\xspace}
+\newcommand{\Unit}[1]{\ensuremath{\mathrm{\:#1}}\xspace}
+\newcommand{\wattnm}{\Unit{W\,m^{-2}\,nm^{-1}}}
+\newcommand{\mol}{\Unit{mol\,m^{-2}\,s^{-1}}}
+\newcommand{\watt}{\Unit{W\,m^{-2}}}
+\newcommand{\UV}[1][]{\ensuremath{\mathrm{UV}_\mathrm{#1}}\xspace}
+\newcommand{\UVC}[1][]{\ensuremath{\mathrm{UV\textrm{-}C}_\mathrm{#1}}\xspace}
+\newcommand{\UVB}[1][]{\ensuremath{\mathrm{UV\textrm{-}B}_\mathrm{#1}}\xspace}
+\newcommand{\UVA}[1][]{\ensuremath{\mathrm{UV\textrm{-}A}_\mathrm{#1}}\xspace}
+
+\begin{document}
+
+<<setup, include=FALSE, cache=FALSE>>=
+library(knitr)
+opts_chunk$set(fig.path='figure/pos-', fig.align='center', fig.show='hold', size="footnotesize",            fig.width=8, fig.height=5.5, out.width='.95\\textwidth')
+options(replace.assign = TRUE, width = 55,
+        warnPartialMatchAttr = FALSE,
+        warnPartialMatchDollar = FALSE,
+        warnPartialMatchArgs = FALSE)
+@
+
+<<example-0-hiden, include=FALSE>>=
+library(photobiology)
+library(photobiologyWavebands)
+@
+
+<<own-set-up, echo=FALSE, include=FALSE>>=
+my_version <- packageVersion("photobiologyWavebands")
+@
+
+\title{\PBWB Version \Sexpr{my_version}\\ User Guide}
+
+\author{Pedro J. Aphalo}
+
+\maketitle
+
+\section{Introduction}
+
+This package provides constructors for \texttt{waveband} objects, a class defined
+in package \PB. These are convenience functions that allow definition of
+range of wavelengths and biological spectral weighting functions (BSWFs)
+following definitions in common use and ISO standards.
+
+\section{Calculating irradiances}
+
+Functions for several colour bands, in some cases according to different
+optional definitions, are listed in Table \ref{tab:unweighted}.
+
+
+\begin{table*}
+    \caption[Unweighted wavebands]{Functions in R package \PBWB used for cronstructing
+    descriptors of wavebands used for calculation of irradiances or exposures. The boundaries of
+    the band given as wavelengths in nm ($\lambda$). Definiton according to ISO-21348 "ISO" is
+    the default for all functions exept \texttt{PAR()} for which there is only one definition
+    in common use "Plant" which is the default.}\label{tab:unweighted}\vspace{2ex}
+    \centering
+\textsf{%
+       \begin{small}
+       \begin{tabular}{@{}lllc@{}}
+       \toprule
+       Waveband & Source & Dose or irrad. & Waveband (nm) \\
+       \midrule
+       \UV & ISO-21348 & \texttt{UV("ISO")} & $100\leq\lambda<400$ \\
+       \UVC & ISO-21348 & \texttt{UVC("ISO")} & $100\leq\lambda<280$ \\
+       \UVC & n.a. & \texttt{UVC("medical")} & $220\leq\lambda<290$ \\
+       \UVC & n.a. & \texttt{UVC("none")} & $200\leq\lambda<280$ \\
+       \UVB & ISO-21348 & \texttt{UVB("ISO")} & $280\leq\lambda<315$ \\
+       \UVB & n.a. & \texttt{UVB("none")} & $280\leq\lambda<320$ \\
+       \UVA & ISO-21348 & \texttt{UVA("ISO")} & $315\leq\lambda<400$ \\
+       \UVA & n.a. & \texttt{UVA("none")} & $320\leq\lambda<400$ \\
+       \midrule
+       Visible & ISO-21348 & \texttt{VIS("ISO")} & $380\leq\lambda<760$ \\
+       Photosynthesis  & n.a. & \texttt{PAR("Plant")} & $400\leq\lambda<700$ \\
+       Purple & ISO-21348 & \texttt{Purple("ISO")} & $360\leq\lambda<450$ \\
+       Blue & Sellaro & \texttt{Blue("Sellaro")} & $420\leq\lambda<490$ \\
+       Blue & ISO-21348 & \texttt{Blue("ISO")} & $450\leq\lambda<500$ \\
+       Green & Sellaro & \texttt{Green("Sellaro")} & $500\leq\lambda<570$ \\
+       Green & ISO-21348 & \texttt{Green("ISO")} & $500\leq\lambda<570$ \\
+       Yellow & ISO-21348 & \texttt{Yellow("ISO")} & $570\leq\lambda<591$ \\
+       Orange & ISO-21348 & \texttt{Orange("ISO")} & $591\leq\lambda<610$ \\
+       Red & ISO-21348 & \texttt{Red("ISO")} & $610\leq\lambda<760$ \\
+       Red & Smith & \texttt{Red("Smith10")} & $655\leq\lambda<665$ \\
+       Red & Smith ? & \texttt{Red("Smith20")} & $650\leq\lambda<670$ \\
+       Red & Inada   & \texttt{Red("Inada")} & $600\leq\lambda<700$ \\
+       Red & Warrington  & \texttt{Red("Warrington")} & $625\leq\lambda<675$ \\
+       Red & Sellaro & \texttt{Red("Sellaro")} & $620\leq\lambda<680$ \\
+       Far-red & ISO & \texttt{Far\_red("ISO")} & not defined \\
+       Far-red & Smith10 & \texttt{Far\_red("Smith")} & $725\leq\lambda<735$ \\
+       Far-red & Smith20 & \texttt{Far\_red("Smith")} & $720\leq\lambda<740$ \\
+       Far-Red & Inada   & \texttt{Red("Inada")} & $700\leq\lambda<800$ \\
+       Far-Red & Warrington  & \texttt{Red("Warrington")} & $700\leq\lambda<850$ \\
+       Far-red & Sellaro & \texttt{Far\_red("Sellaro")} & $700\leq\lambda<750$ \\
+       Far-red & BTV & \texttt{Far\_red("BTV")} & $700\leq\lambda<760$ \\
+       \midrule
+       \textsl{Arbitrary} & n.a. & \texttt{new\_waveband(lo,hi)} & $lo\leq\lambda<hi$ \\
+       \bottomrule
+     \end{tabular}
+     \end{small}
+}\end{table*}
+
+An example using \texttt{sun\_spct} included in package \texttt{photobiology}. As the input spectral irradiance is units of \wattnm the output is in \mol or \watt.
+
+<<example-1>>=
+e_irrad(sun.spct, UV()) # W m-2
+q_irrad(sun.spct, UV()) * 1e6 # umol s-1 m-2
+@
+
+Irradiances for different wavebands can be grouped into a list of any length. If the list has named members, then these names are used instead of the default ones.
+
+<<>>=
+e_irrad(sun.spct, list(Blue(), VIS()))
+e_irrad(sun.spct, list(B = Blue(), VIS()))
+@
+
+A few functions for generating coherent lists of wavebands are also defined (Table \ref{tab:uw:lists}).
+
+<<>>=
+e_irrad(sun.spct, VIS_bands())
+@
+
+
+\begin{table*}
+    \caption[Lists of wavebands]{Functions in R package \PBWB used for constructing
+    lists descriptors of wavebands used for calculation of irradiances or exposures.}
+    \label{tab:uw:lists}
+    \vspace{2ex}
+    \centering
+\textsf{%
+       \begin{footnotesize}
+       \begin{tabular}{@{}llll@{}}
+       \toprule
+       % after \\: \hline or \cline{col1-col2} \cline{col3-col4} ...
+       Waveband & Source & Function & std values used \\
+       \midrule
+       VIS defs. & ISO-21348 & \texttt{VIS\_bands("ISO")} & "ISO" \\
+       UV defs. & ISO-21348 & \texttt{UV\_bands("ISO")} & "ISO" \\
+       UV defs. & n.a. & \texttt{UV\_bands("none")} & "none" \\
+       Plant sens. & n.a. & \texttt{Plant\_bands("sensory20")} & "ISO", "Sellaro" and "Smith20" \\
+       Plant sens. & n.a. & \texttt{Plant\_bands("sensory")} & "ISO", "Sellaro" and "Smith20" \\
+       Plant sens. & n.a. & \texttt{Plant\_bands("sensory10")} & "ISO", "Sellaro" and "Smith10" \\
+       Plant sens. & n.a. & \texttt{Plant\_bands("energy")} & "ISO" and "McCree" \\
+       \bottomrule
+     \end{tabular}
+     \end{footnotesize}
+}\end{table*}
+
+\section{Photon ratios}
+\label{sec:ratios:photon}
+
+Photon ratios can be calculated from any pair of waveband objects. This a convenient and very flexible way of doing this type of calculations.
+
+<<>>=
+q_ratio(sun.spct, Blue(), VIS())
+@
+
+
+\section{Effective irradiances and exposures}
+
+The waveband definitions and SWFs are stored in \texttt{waveband} objetcs, that can be created
+with function \texttt{waveband}. The same functions described above
+for unweighted irradiances are used to calculate effective irradiances and doses.
+
+Currently functions for constructing \texttt{waveband} objects describing several BSWFs are implemented (see Table \ref{tab:effective}). These functions take three arguments in most cases as they have been used
+and continue to be used inconsistently in the scientific literature.
+By supplying these arguments different variations of the BSWFs can be obtained. The defaults
+used are those values which we consider best, usually the most frequently used ones, except
+in cases when we consider the use of those values problematic for the reliability of the
+calcualtions.
+
+<<>>=
+e_irrad(sun.spct, CIE())
+@
+
+
+\begin{sidewaystable*}
+    \caption[Weighted wavebands]{Functions in R package \PBWB used for constructing
+    \texttt{waveband} objects describing BSWFs used for calculation of effective irradiances
+    or doses. The functions
+    for BSWFs available in this package, are by default as in the original source. Optionally
+    they can be normalized to any wavelength within their non-zero range by providing the
+    \texttt{norm} argument with a wavelength in nm. The range of wavelengths included when calculating integrals is given by \texttt{w.low} and \texttt{w.high}. The values in the table below are the defaults.}\label{tab:effective}
+    \vspace{2ex}
+    \centering
+\textsf{%
+       \begin{small}
+       \begin{tabular}{@{}lllccc@{}}
+       \toprule
+       % after \\: \hline or \cline{col1-col2} \cline{col3-col4} ...
+       Action spectrum & Formulation & Constructor & norm  & w.low & w.high \\
+                       &             & function    & $\lambda$ (nm) & $\lambda$ (nm) & $\lambda$ (nm)\\
+       \midrule
+       Gen. plant action & Green & \texttt{GEN\_G(norm, w.low, w.high)} & 300 & 275 & 313.3\\
+       Gen. plant action & Thimijan & \texttt{GEN\_T(norm, w.low, w.high)} & 300 & 275 & 345.0\\
+       Gen. plant action & Micheletti & \texttt{GEN\_M(norm, w.low, w.high)} & 300 & 275 & 313.3\\
+       Plant growth & Flint \& Caldwell & \texttt{PG(norm, w.low, w.high)} & 300 & 275 & 390.0\\
+       Erythemal & CIE98 & \texttt{CIE(norm, w.low, w.high)} & 298 & 250 & 400.0\\
+       ICNIRP    & ICNIRP2004 & \texttt{ICNIRP(norm, w.low, w.high)} & 270 & 210 & 400.0\\
+       `Naked' DNA & TUV, from Setlow & \texttt{DNA\_N(norm, w.low, w.high)} & 300 & 250 & 400.0 \\
+       `Naked' DNA & Green \& Miller & \texttt{DNA\_GM(norm, w.low, w.high)} & 300 & 250 & 400.0\\
+       `Plant' DNA & Musil, from Quaite & \texttt{DNA\_P(norm, w.low, w.high)} & 300 & 250 & 400.0\\
+       Flavonoid & Ibdah & \texttt{FLAV(norm, w.low, w.high)} & 300 & 275 & 346.0\\
+%       UVR8 absorbance & & \texttt{UVR8.Abs(norm)} & n.a & n.a. & n.a.\\
+       \bottomrule
+     \end{tabular}
+     \end{small}
+}\end{sidewaystable*}
+
+
+\section{Action spectra at given wavelengths}
+
+\begin{table*}
+    \caption[Weighting functions]{Biological spectral weighting functions predefined in R package \PBWB. The functions for BSWFs available in this package, implement the functions as defined in the original publications. When the original `definition' is available as tabulated data, or we have tabulated it by digitizing a figure, the values returned are calculated by spline interpolation.}\label{tab:BSWFs}
+   \vspace{2ex}
+    \centering
+\textsf{%
+       \begin{small}
+       \begin{tabular}{@{}lllc@{}}
+       \toprule
+       % after \\: \hline or \cline{col1-col2} \cline{col3-col4} ...
+       Action spectrum & Formulation & Function & Norm. $\lambda$ (nm) \\
+       \midrule
+       Gen. plant action & Green & \texttt{GEN\_G\_q\_fun(w.length)} & 280 \\
+       Gen. plant action & Thimijan & \texttt{GEN\_T\_q\_fun(w.length)} & 300 \\
+       Gen. plant action & Micheletti & \texttt{GEN\_M\_q\_fun(w.length)} & 300 \\
+       Plant growth & Flint \& Caldwell & \texttt{PG\_q\_fun(w.length)} & 300 \\
+       Erythemal & CIE98 & \texttt{CIE\_e\_fun(w.length)} & 298 \\
+       ICNIRP    & ICNIRP2004 & \texttt{ICNIRP\_e\_fun(w.length)} & 270 \\
+       `Naked' DNA & TUV, from Setlow & \texttt{DNA\_N\_q\_fun(w.length)} & n.a. \\
+       `Naked' DNA & Green \& Miller & \texttt{DNA\_GM\_q\_fun(w.length)} & n.a. \\
+       `Plant' DNA & Musil, from Quaite & \texttt{DNA\_P\_q\_fun(w.length)} & 290 \\
+       Flavonoid & Ibdah & \texttt{FLAV\_q\_fun(w.length)} & 300 \\
+%       UVR8 absorbance & & \texttt{UVR8.Abs.fun(w)} & n.a \\
+       \bottomrule
+     \end{tabular}
+     \end{small}
+}\end{table*}
+
+The functions available for calculating action spectra take as argument a vector of wavelengths, and return a vector
+of effectiveness (either quatum/photon or energy based)
+depending on how the original source describes them.
+These functions are listed in Table \ref{tab:BSWFs},
+and an example of their use follows.
+
+<<eval=TRUE>>=
+# at 1 nm intervals
+wavelengths1 <- 285:400
+action.spectrum1 <- CIE_e_fun(wavelengths1)
+@
+
+All functions accept a wavelengths vector with variable and arbitrary step sizes, with the condition that the wavelengths are sorted in strictly increasing order.
+
+In practice these functions are mainly used internally by the package, and very rarely in user code, as the same output can by obtained by multiplication of \texttt{source\_spct} objects by \texttt{waveband} objects.
+
+Compare the following two plots,
+
+<<>>=
+sun.spct * CIE()
+@
+
+\section{Luminous flux}
+
+The luminuous flux per unit are in lux can be calculated as follows using the original luminous efficency function for the human eye using for defining the lumen. As we start with spectral irradiance we obtain luminous flux per unit area expressed in lux.
+
+<<>>=
+e_response(sun.spct * CIE1924_lef.spct) * photopic_sensitivity
+@
+
+The luminuous flux per unit area in lux can be calculated as follows using the latest luminous efficency function for the human eye.
+
+<<>>=
+e_response(sun.spct * CIE2008_lef2deg.spct) * photopic_sensitivity
+@
+
+As the luminous effciency functions vary slightly in the wavelength at which the maximum is located, and the wavelength used for the sensitivity constant is fixed by the definition of the Lumen, a small correction is need for exact results.
+
+<<>>=
+e_response(sun.spct * CIE2008_lef2deg.spct) * photopic_sensitivity *
+                       interpolate_spct(CIE2008_lef2deg.spct, 555)$s.e.response
+@
+
+An equivalent quantity can be calculated for scotopic vision, using the corresponding function and constant.
+
+<<>>=
+e_response(sun.spct * 1e-6 * CIE1951_scotopic_lef.spct) * scotopic_sensitivity
+@
+
+\end{document}
