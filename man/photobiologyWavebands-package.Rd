@@ -4,12 +4,12 @@
 \name{photobiologyWavebands-package}
 \alias{photobiologyWavebands}
 \alias{photobiologyWavebands-package}
-\title{Waveband Definitions for UV, VIS, and IR Radiation}
+\title{Waveband Definitions for 'UV', 'VIS', and 'IR' Radiation}
 \description{
 Constructors of waveband objects for commonly used biological
-spectral weighting functions (BSWFs) and for different wavebands describing
-named ranges of wavelengths in the ultraviolet (UV), visible (VIS)
-and infrared (IR) regions of the electromagnetic spectrum.
+spectral weighting functions ('BSWFs') and for different wavebands describing
+named ranges of wavelengths in the ultraviolet ('UV'), visible ('VIS')
+and infrared ('IR') regions of the electromagnetic spectrum.
 }
 \details{
 This package provides constructors for objects of class \code{waveband}

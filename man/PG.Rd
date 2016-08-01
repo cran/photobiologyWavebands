@@ -52,7 +52,7 @@ of Biologically Active UV Radiation to Stratospheric Ozone Changes: Effects
 of Action Spectrum Shape and Wavelength Range Photochemistry and
 Photobiology, 78, 456-461
 
-[3] \url{http://cprm.acd.ucar.edu/Models/TUV/}
+[3] \url{https://www2.acom.ucar.edu/modeling/tropospheric-ultraviolet-and-visible-tuv-radiation-model}
 }
 \seealso{
 \code{\link{GEN_G}} \code{\link{GEN_T}} \code{\link{GEN_M}} and

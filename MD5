@@ -1,6 +1,6 @@
-e5105ca5696178a32fa369a6168ab55f *DESCRIPTION
+c6adccb848ad913ae7dd75b03bf263f2 *DESCRIPTION
 a42dfddf451c999ee5aeb7988286942a *NAMESPACE
-9def5b2e74d71452f164767abdb7fa00 *NEWS
+9f28c07926f0aca8f5c173597732dc22 *NEWS
 33687d56bd7be97e81f075cb6415f1df *R/blue.r
 7072c512383429afe21dd46c7e5f44b7 *R/cie.e.fun.r
 ae097c00c768f68ff7ed379cbb7b0bdb *R/cie.q.fun.r
@@ -11,7 +11,7 @@ e16b2d7e2af360da707a67b95e73839a *R/dna.gm.q.fun.r
 64fb8b716ee8f025a4cd6e4171c226aa *R/dna.n.r
 7bb1cff68d5799c319ab29156d6d8581 *R/dna.p.q.fun.r
 7abbaacc3dde6174a66586dd3cd5fc4b *R/dna.p.r
-8faabba9ce9901983dda1a940e0314f8 *R/far.red.r
+30a72d435b18a5e6b4454d7c983e39d0 *R/far.red.r
 0572232d4b2f957b749b040d5a299b24 *R/flav.q.fun.r
 83a5b050d3c0f18b486f81381187e849 *R/flav.r
 f204103d0f60962967712e868f0b7d2f *R/gen.g.q.fun.r
@@ -29,7 +29,7 @@ e85fd1af428f244c0c32c22b5267fc04 *R/meth.q.fun.r
 c8e0e94c6cb9fccbfb94c03e5e8ac10a *R/orange.r
 fd0f8f644148b1229cf5af584acc78d3 *R/par.r
 58404a73c62466e3d19fb252a5bb038b *R/pg.q.fun.r
-38b55534b83f5376955cd3764a78c801 *R/pg.r
+a2a694a9e8b28330e144ac5387e6ba0b *R/pg.r
 5538a11b5c458374d3076e43343438bc *R/photobiologyWavebands.R
 189d8fa25effdd7c376ab98788d81012 *R/plant.bands.r
 8e8849ab574bdef7a0ca1f0274b4fa2b *R/purple.r
@@ -45,14 +45,15 @@ e4ff51a69141a147b0c112706f8e10f5 *R/uvi.wb.r
 e78e9db2fcb12b6eebd370662d77d77a *R/vis.bands.r
 883fe7c8f9e786ef616af9301885c400 *R/vis.r
 90b7df6c367aedf685b70bf217c79a2b *R/yellow.r
-b6e38e646d23b84c61e668e32de611f0 *README.md
-13a9d28e43490f677eec52b5c3d93153 *build/vignette.rds
+4fcd9bc3af98a8bc15db0baee9e5180a *README.md
+a7105df5a3c424024b046a2a5c328eb0 *build/vignette.rds
 8afb5e3b768b8b3034c0a479cd37d6bb *data/BSWF.spectra.rda
-ab503b2ceaf1f0912916d5d1b3bfcd26 *inst/doc/dataplotswb.pdf
+a34c03482d406c54ae16ef3bc3d1c7ff *inst/doc/dataplotswb.pdf
 295ee8dd4b35163d5d77946e00cc18e5 *inst/doc/user-guide.R
 bd20fa28f67cc19d3f0a0b4ff8e1dfad *inst/doc/user-guide.Rnw
-1230cf0bbf14606cb7de1c6b583b7b08 *inst/doc/user-guide.pdf
+4797e7fe279bd5815c9a73d853bed5b8 *inst/doc/user-guide.pdf
 ee53068e366ff1da118a92ae734a41a4 *inst/doc/userguideWB.pdf
+5d7233350bd62c80db88023b3f5c22f7 *inst/staticdocs/index.r
 c286dd6e6868f577bf8516664a6b49a8 *man/Blue.Rd
 dd321eb9dbbbaf64c0820d5eb784891c *man/CH4.Rd
 b07ccde230d48031cc18483d5de3db31 *man/CH4_e_fun.Rd
@@ -74,7 +75,7 @@ cb0b87098224d1109852ab932f863ffa *man/DNA_GM_q_fun.Rd
 53d24fcbcb516cc6de136d0cb9ca8332 *man/DNA_P_q_fun.Rd
 d037ca564a94c6e2b5623f4ab095431d *man/FLAV.Rd
 3f68a78ee9d04d3975003575ed65732d *man/FLAV_q_fun.Rd
-f45217964176e88f41949aa5f89ab4b4 *man/Far_red.Rd
+debae0b3826a5bd7e11dea848759cee4 *man/Far_red.Rd
 ef7f5e49b05395c19d550dbf0f3e5a16 *man/GEN.G.Rd
 0decac5379790486c654dc82c3e47b7c *man/GEN.M.Rd
 6d8d9e84d2783612accdf1b21cfdea78 *man/GEN.T.Rd
@@ -89,7 +90,7 @@ cdd6fde435b28cd9fd4b976e787f8b10 *man/ICNIRP.Rd
 40a4388bbda423192e9b3e03609280c6 *man/ICNIRP_e_fun.Rd
 35e164a7117739320c2c8432911bbb84 *man/Orange.Rd
 f38c38d913839ef91d49b1696cccf093 *man/PAR.Rd
-5b1447f17dd66ef2e69c61eb00248870 *man/PG.Rd
+021764c7cd10a5ca8ec528fb65234d2d *man/PG.Rd
 2ea56d462d983973041b02379d406d9d *man/PG_q_fun.Rd
 c9f8b127a2c772465fb9c26405ad412b *man/Plant_bands.Rd
 ff87ecb5b88a97f487b640e5fb938ea5 *man/Purple.Rd
@@ -105,7 +106,7 @@ d3579084f812f2af1f329a0312290eb9 *man/UVC.Rd
 295f27b08fb956186ebdd103fa28c2d1 *man/VIS.Rd
 8ea2eb64ca93b3c89061829cc25de6e7 *man/VIS_bands.Rd
 62d2cbbf8f5dc0ec78f83c540d0ddced *man/Yellow.Rd
-4e1d1e2d27f25028aa3d5b380dddb86a *man/photobiologyWavebands-package.Rd
+9094d5316b73e9d2bdbddaf081ca0883 *man/photobiologyWavebands-package.Rd
 47d54a765d59a70f1b24eee0d579f874 *man/photopic_sensitivity.Rd
 dfd6f94d1a4ac6933c251640d2fb5c00 *man/scotopic_sensitivity.Rd
 bd20fa28f67cc19d3f0a0b4ff8e1dfad *vignettes/user-guide.Rnw
