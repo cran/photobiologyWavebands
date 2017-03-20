@@ -2,7 +2,7 @@
 % Please edit documentation in R/dna.p.r
 \name{DNA.P}
 \alias{DNA.P}
-\title{Definition of DNA damage (Quaite) weighted waveband}
+\title{Constructor of DNA damage (Quaite) weighted waveband}
 \usage{
 DNA.P(norm = 300, w.low = 275, w.high = 400)
 }
@@ -13,4 +13,3 @@ Plant DNA damage BSWF as formulated by Musil.
 \code{\link{DNA_P}}
 }
 \keyword{internal}
-

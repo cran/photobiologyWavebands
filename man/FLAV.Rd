@@ -2,7 +2,7 @@
 % Please edit documentation in R/flav.r
 \name{FLAV}
 \alias{FLAV}
-\title{Definition of FLAV BSWF flavonoids}
+\title{Constructor of FLAV BSWF flavonoids}
 \usage{
 FLAV(norm = 300, w.low = 275, w.high = 346)
 }
@@ -35,4 +35,3 @@ Other BSWF weighted wavebands: \code{\link{CH4}},
   \code{\link{GEN_T}}, \code{\link{ICNIRP}},
   \code{\link{PG}}
 }
-

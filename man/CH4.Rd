@@ -2,7 +2,7 @@
 % Please edit documentation in R/meth.r
 \name{CH4}
 \alias{CH4}
-\title{Definition of CH4 production from pectin weighted waveband}
+\title{Constructor of CH4 production from pectin weighted waveband}
 \usage{
 CH4(norm = 300, w.low = 275, w.high = 400)
 }
@@ -35,4 +35,3 @@ Other BSWF weighted wavebands: \code{\link{CIE}},
   \code{\link{GEN_T}}, \code{\link{ICNIRP}},
   \code{\link{PG}}
 }
-

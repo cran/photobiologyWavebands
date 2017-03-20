@@ -2,7 +2,7 @@
 % Please edit documentation in R/gen.g.r
 \name{GEN_G}
 \alias{GEN_G}
-\title{Definition of GPAS (Green) weighted waveband}
+\title{Constructor of GPAS (Green) weighted waveband}
 \usage{
 GEN_G(norm = 300, w.low = 275, w.high = 313.3)
 }
@@ -56,4 +56,3 @@ Other BSWF weighted wavebands: \code{\link{CH4}},
   \code{\link{GEN_T}}, \code{\link{ICNIRP}},
   \code{\link{PG}}
 }
-

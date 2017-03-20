@@ -2,7 +2,7 @@
 % Please edit documentation in R/par.r
 \name{PAR}
 \alias{PAR}
-\title{Definition of PAR waveband}
+\title{Constructor of PAR waveband}
 \usage{
 PAR(std = "Plant")
 }
@@ -28,4 +28,3 @@ McCree, K. J. (1972) The action spectrum, absorptance and quantum
 \seealso{
 \code{\link[photobiology]{waveband}}
 }
-

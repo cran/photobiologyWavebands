@@ -21,4 +21,3 @@ The variables are as follows:
 \url{http://www.cvrl.org/} downloaded on 2015-01-24
 }
 \keyword{datasets}
-

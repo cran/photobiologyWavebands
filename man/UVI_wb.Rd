@@ -2,7 +2,7 @@
 % Please edit documentation in R/uvi.wb.r
 \name{UVI_wb}
 \alias{UVI_wb}
-\title{Definition of CIE weighted waveband}
+\title{Constructor of CIE weighted waveband}
 \usage{
 UVI_wb(std = "NOAA")
 }
@@ -42,4 +42,3 @@ UV Dose Calculations. NOAA-EPA Brewer Network.
 \code{\link{UVI}}
 }
 \keyword{internal}
-

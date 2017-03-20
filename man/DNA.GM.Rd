@@ -2,7 +2,7 @@
 % Please edit documentation in R/dna.gm.r
 \name{DNA.GM}
 \alias{DNA.GM}
-\title{Definition of DNA damage (SETLOW) weighted waveband}
+\title{Constructor of DNA damage (SETLOW) weighted waveband}
 \usage{
 DNA.GM(norm = 300, w.low = 275, w.high = 400)
 }
@@ -13,4 +13,3 @@ Naked DNA damage BSWF, Green and Miller's formulation.
 \code{\link{DNA_GM}}
 }
 \keyword{internal}
-

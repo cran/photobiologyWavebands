@@ -2,7 +2,7 @@
 % Please edit documentation in R/uvc.r
 \name{UVC}
 \alias{UVC}
-\title{Definition of UV-C waveband}
+\title{Constructor of UV-C waveband}
 \usage{
 UVC(std = "ISO")
 }
@@ -30,8 +30,8 @@ UVC("medical")
 
 Other unweighted wavebands: \code{\link{Blue}},
   \code{\link{Far_red}}, \code{\link{Green}},
-  \code{\link{Orange}}, \code{\link{Purple}},
-  \code{\link{Red}}, \code{\link{UVA}}, \code{\link{UVB}},
-  \code{\link{UV}}, \code{\link{VIS}}, \code{\link{Yellow}}
+  \code{\link{IR}}, \code{\link{Orange}},
+  \code{\link{Purple}}, \code{\link{Red}},
+  \code{\link{UVA}}, \code{\link{UVB}}, \code{\link{UV}},
+  \code{\link{VIS}}, \code{\link{Yellow}}
 }
-

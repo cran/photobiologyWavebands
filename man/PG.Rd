@@ -2,7 +2,7 @@
 % Please edit documentation in R/pg.r
 \name{PG}
 \alias{PG}
-\title{Definition of PG weighted waveband}
+\title{Constructor of PG weighted waveband}
 \usage{
 PG(norm = 300, w.low = 275, w.high = 390)
 }
@@ -65,4 +65,3 @@ Other BSWF weighted wavebands: \code{\link{CH4}},
   \code{\link{GEN_M}}, \code{\link{GEN_T}},
   \code{\link{ICNIRP}}
 }
-

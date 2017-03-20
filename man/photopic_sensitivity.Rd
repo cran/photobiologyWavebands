@@ -16,4 +16,3 @@ Constant value used in the definition of Lumen
 A single numeric value
 }
 \keyword{datasets}
-

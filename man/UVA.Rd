@@ -2,9 +2,15 @@
 % Please edit documentation in R/uva.r
 \name{UVA}
 \alias{UVA}
-\title{Definition of UV-A waveband}
+\alias{UVA1}
+\alias{UVA2}
+\title{Constructor of UV-A waveband}
 \usage{
 UVA(std = "ISO")
+
+UVA1(std = "CIE")
+
+UVA2(std = "CIE")
 }
 \arguments{
 \item{std}{a character string "CIE", "ISO" or "none"}
@@ -15,12 +21,18 @@ a waveband object wavelength defining a wavelength range.
 \description{
 UV-A according to CIE and ISO standrads: 315--400 nm.
 UV-A according to common non-standard practice: 320--400 nm.
+UV-A1 according to CIE: 315--340 nm.
+UV-A2 according to CIE: 340--400 nm.
 }
 \examples{
 UVA()
 UVA("none")
 UVA("ISO")
 UVA("CIE")
+UVA1()
+UVA1("CIE")
+UVA2()
+UVA2("CIE")
 
 }
 \seealso{
@@ -28,8 +40,8 @@ UVA("CIE")
 
 Other unweighted wavebands: \code{\link{Blue}},
   \code{\link{Far_red}}, \code{\link{Green}},
-  \code{\link{Orange}}, \code{\link{Purple}},
-  \code{\link{Red}}, \code{\link{UVB}}, \code{\link{UVC}},
-  \code{\link{UV}}, \code{\link{VIS}}, \code{\link{Yellow}}
+  \code{\link{IR}}, \code{\link{Orange}},
+  \code{\link{Purple}}, \code{\link{Red}},
+  \code{\link{UVB}}, \code{\link{UVC}}, \code{\link{UV}},
+  \code{\link{VIS}}, \code{\link{Yellow}}
 }
-

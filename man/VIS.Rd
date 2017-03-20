@@ -2,19 +2,20 @@
 % Please edit documentation in R/vis.r
 \name{VIS}
 \alias{VIS}
-\title{Definition of VIS waveband}
+\title{Constructor of VIS waveband}
 \usage{
 VIS(std = "ISO")
 }
 \arguments{
-\item{std}{a character string "ISO"}
+\item{std}{a character string "ISO" or "RS" (remote sensing).}
 }
 \value{
 A waveband object wavelength defining a wavelength range.
 }
 \description{
-Visible (to humnas) radiation (380...760 nm), no weighting
-applied.
+Visible (to humnas) radiation (380...760 nm) according to ISO standard
+definition, no weighting applied. For \code{std = "RS"} the returned range is
+the same as for \code{PAR()}.
 }
 \examples{
 VIS()
@@ -26,8 +27,8 @@ VIS("ISO")
 
 Other unweighted wavebands: \code{\link{Blue}},
   \code{\link{Far_red}}, \code{\link{Green}},
-  \code{\link{Orange}}, \code{\link{Purple}},
-  \code{\link{Red}}, \code{\link{UVA}}, \code{\link{UVB}},
-  \code{\link{UVC}}, \code{\link{UV}}, \code{\link{Yellow}}
+  \code{\link{IR}}, \code{\link{Orange}},
+  \code{\link{Purple}}, \code{\link{Red}},
+  \code{\link{UVA}}, \code{\link{UVB}}, \code{\link{UVC}},
+  \code{\link{UV}}, \code{\link{Yellow}}
 }
-

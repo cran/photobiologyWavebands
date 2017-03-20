@@ -2,7 +2,7 @@
 % Please edit documentation in R/dna.p.r
 \name{DNA_P}
 \alias{DNA_P}
-\title{Definition of DNA damage (Quaite) weighted waveband}
+\title{Constructor of DNA damage (Quaite) weighted waveband}
 \usage{
 DNA_P(norm = 300, w.low = 275, w.high = 400)
 }
@@ -35,4 +35,3 @@ Other BSWF weighted wavebands: \code{\link{CH4}},
   \code{\link{GEN_T}}, \code{\link{ICNIRP}},
   \code{\link{PG}}
 }
-

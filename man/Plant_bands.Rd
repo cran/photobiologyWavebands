@@ -2,12 +2,14 @@
 % Please edit documentation in R/plant.bands.r
 \name{Plant_bands}
 \alias{Plant_bands}
-\title{Definition of list of wavebands used in plant biology}
+\title{Constructor of lists of wavebands used in plant biology}
 \usage{
 Plant_bands(std = "sensory20")
 }
 \arguments{
-\item{std}{a character string "sensory", "sensory10", "sensory20" or ""}
+\item{std}{a character string "sensory", "sensory10", "sensory20", "ISO",
+"CIE", "none" or "", where "ISO", "CIE" and "none" affect only the UV
+bands.}
 }
 \value{
 a list of wavebands
@@ -20,13 +22,14 @@ Plant_bands()
 Plant_bands("sensory")
 Plant_bands("sensory10")
 Plant_bands("sensory20")
-Plant_bands("")
+Plant_bands("ISO")
+Plant_bands("CIE")
 
 }
 \seealso{
 \code{\link[photobiology]{waveband}}
 
-Other lists of unweighted wavebands: \code{\link{UV_bands}},
+Other lists of unweighted wavebands: \code{\link{IR_bands}},
+  \code{\link{Landsat_bands}}, \code{\link{UV_bands}},
   \code{\link{VIS_bands}}
 }
-

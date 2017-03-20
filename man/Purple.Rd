@@ -2,12 +2,12 @@
 % Please edit documentation in R/purple.r
 \name{Purple}
 \alias{Purple}
-\title{Definition of purple waveband}
+\title{Constructor of purple waveband}
 \usage{
 Purple(std = "ISO")
 }
 \arguments{
-\item{std}{a character string "ISO"}
+\item{std}{a character string "ISO", or Landsat imager "LandsatOLI".}
 }
 \value{
 A waveband object wavelength defining a wavelength range.
@@ -26,8 +26,8 @@ Purple("ISO")
 
 Other unweighted wavebands: \code{\link{Blue}},
   \code{\link{Far_red}}, \code{\link{Green}},
-  \code{\link{Orange}}, \code{\link{Red}},
-  \code{\link{UVA}}, \code{\link{UVB}}, \code{\link{UVC}},
-  \code{\link{UV}}, \code{\link{VIS}}, \code{\link{Yellow}}
+  \code{\link{IR}}, \code{\link{Orange}},
+  \code{\link{Red}}, \code{\link{UVA}}, \code{\link{UVB}},
+  \code{\link{UVC}}, \code{\link{UV}}, \code{\link{VIS}},
+  \code{\link{Yellow}}
 }
-

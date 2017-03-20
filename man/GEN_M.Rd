@@ -2,7 +2,7 @@
 % Please edit documentation in R/gen.m.r
 \name{GEN_M}
 \alias{GEN_M}
-\title{Definition of GPAS (Micheletti) weighted waveband}
+\title{Constructor of GPAS (Micheletti) weighted waveband}
 \usage{
 GEN_M(norm = 300, w.low = 275, w.high = 313.3)
 }
@@ -53,4 +53,3 @@ Other BSWF weighted wavebands: \code{\link{CH4}},
   \code{\link{GEN_T}}, \code{\link{ICNIRP}},
   \code{\link{PG}}
 }
-

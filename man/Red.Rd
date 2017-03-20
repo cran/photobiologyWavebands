@@ -2,12 +2,13 @@
 % Please edit documentation in R/red.r
 \name{Red}
 \alias{Red}
-\title{Definition of red waveband}
+\title{Constructor of red waveband}
 \usage{
 Red(std = "ISO")
 }
 \arguments{
-\item{std}{a character string, defaults to "ISO".}
+\item{std}{a character string, "ISO", "Smith10", "Smith20", "Inada",
+"Warrington", "Sellaro", "RS", or for Landsat imagers "LandsatRBV", etc.}
 }
 \value{
 a waveband object wavelength defining a wavelength range.
@@ -54,8 +55,8 @@ Review of Plant Physiology, 33:481-518.
 
 Other unweighted wavebands: \code{\link{Blue}},
   \code{\link{Far_red}}, \code{\link{Green}},
-  \code{\link{Orange}}, \code{\link{Purple}},
-  \code{\link{UVA}}, \code{\link{UVB}}, \code{\link{UVC}},
-  \code{\link{UV}}, \code{\link{VIS}}, \code{\link{Yellow}}
+  \code{\link{IR}}, \code{\link{Orange}},
+  \code{\link{Purple}}, \code{\link{UVA}},
+  \code{\link{UVB}}, \code{\link{UVC}}, \code{\link{UV}},
+  \code{\link{VIS}}, \code{\link{Yellow}}
 }
-

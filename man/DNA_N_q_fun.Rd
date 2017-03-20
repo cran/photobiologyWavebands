@@ -26,4 +26,3 @@ The digitized data as used in the TUV model covers the wavelength range
 \examples{
 DNA_N_q_fun(293:400)
 }
-

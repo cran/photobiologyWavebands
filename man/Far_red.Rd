@@ -2,7 +2,7 @@
 % Please edit documentation in R/far.red.r
 \name{Far_red}
 \alias{Far_red}
-\title{Definition of FR waveband}
+\title{Constructor of FR waveband}
 \usage{
 Far_red(std = "ISO")
 }
@@ -23,12 +23,15 @@ Far_red("Smith")
 
 }
 \seealso{
+\code{\link{NIR}} for wavebands close to the boundary between red
+  and infrared regions.
+
 \code{\link[photobiology]{waveband}}
 
 Other unweighted wavebands: \code{\link{Blue}},
-  \code{\link{Green}}, \code{\link{Orange}},
-  \code{\link{Purple}}, \code{\link{Red}},
-  \code{\link{UVA}}, \code{\link{UVB}}, \code{\link{UVC}},
-  \code{\link{UV}}, \code{\link{VIS}}, \code{\link{Yellow}}
+  \code{\link{Green}}, \code{\link{IR}},
+  \code{\link{Orange}}, \code{\link{Purple}},
+  \code{\link{Red}}, \code{\link{UVA}}, \code{\link{UVB}},
+  \code{\link{UVC}}, \code{\link{UV}}, \code{\link{VIS}},
+  \code{\link{Yellow}}
 }
-

@@ -2,7 +2,7 @@
 % Please edit documentation in R/uvb.r
 \name{UVB}
 \alias{UVB}
-\title{Definition of UV-B waveband}
+\title{Constructor of UV-B waveband}
 \usage{
 UVB(std = "ISO")
 }
@@ -30,8 +30,8 @@ UVB("medical")
 
 Other unweighted wavebands: \code{\link{Blue}},
   \code{\link{Far_red}}, \code{\link{Green}},
-  \code{\link{Orange}}, \code{\link{Purple}},
-  \code{\link{Red}}, \code{\link{UVA}}, \code{\link{UVC}},
-  \code{\link{UV}}, \code{\link{VIS}}, \code{\link{Yellow}}
+  \code{\link{IR}}, \code{\link{Orange}},
+  \code{\link{Purple}}, \code{\link{Red}},
+  \code{\link{UVA}}, \code{\link{UVC}}, \code{\link{UV}},
+  \code{\link{VIS}}, \code{\link{Yellow}}
 }
-

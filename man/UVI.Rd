@@ -48,4 +48,3 @@ P. Kiedron, S. Stierle and K. Lantz (2007) Instantaneous UV Index and Daily
 UV Dose Calculations. NOAA-EPA Brewer Network.
 \url{http://www.esrl.noaa.gov/gmd/grad/neubrew/docs/UVindex.pdf}
 }
-

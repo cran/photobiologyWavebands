@@ -2,7 +2,7 @@
 % Please edit documentation in R/gen.t.r
 \name{GEN.T}
 \alias{GEN.T}
-\title{Definition of GPAS (Timijan) weighted waveband}
+\title{Constructor of GPAS (Timijan) weighted waveband}
 \usage{
 GEN.T(norm = 300, w.low = 275, w.high = 345)
 }
@@ -13,4 +13,3 @@ Generalized Plant Action BSWF of Caldwell as formulated by Timijan et al.
 \code{\link{GEN_T}}
 }
 \keyword{internal}
-

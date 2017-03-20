@@ -2,18 +2,20 @@
 % Please edit documentation in R/blue.r
 \name{Blue}
 \alias{Blue}
-\title{Definition of list of VIS wavebands}
+\title{Constructor of blue waveband}
 \usage{
 Blue(std = "ISO")
 }
 \arguments{
-\item{std}{a character string "ISO", or "Sellaro"}
+\item{std}{a character string "ISO", "Sellaro" (plant biology), or "RS"
+(remote sensing), or Landsat imagers, "LandsatTM", "LandsatETM", or
+"LandsatOLI".}
 }
 \value{
 a waveband object wavelength defining a wavelength range.
 }
 \description{
-Defined according to "ISO".
+Default defined according to "ISO".
 }
 \examples{
 Blue()
@@ -25,9 +27,9 @@ Blue("Sellaro")
 \code{\link{new_waveband}}  \code{\link{waveband}}
 
 Other unweighted wavebands: \code{\link{Far_red}},
-  \code{\link{Green}}, \code{\link{Orange}},
-  \code{\link{Purple}}, \code{\link{Red}},
-  \code{\link{UVA}}, \code{\link{UVB}}, \code{\link{UVC}},
-  \code{\link{UV}}, \code{\link{VIS}}, \code{\link{Yellow}}
+  \code{\link{Green}}, \code{\link{IR}},
+  \code{\link{Orange}}, \code{\link{Purple}},
+  \code{\link{Red}}, \code{\link{UVA}}, \code{\link{UVB}},
+  \code{\link{UVC}}, \code{\link{UV}}, \code{\link{VIS}},
+  \code{\link{Yellow}}
 }
-

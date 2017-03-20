@@ -25,4 +25,3 @@ This luminous efficiency function understimates the renponse to short
 \url{http://www.cvrl.org/} downloaded on 2015-01-24
 }
 \keyword{datasets}
-

@@ -2,7 +2,7 @@
 % Please edit documentation in R/gen.t.r
 \name{GEN_T}
 \alias{GEN_T}
-\title{Definition of GPAS (Timijan) weighted waveband}
+\title{Constructor of GPAS (Timijan) weighted waveband}
 \usage{
 GEN_T(norm = 300, w.low = 275, w.high = 345)
 }
@@ -46,4 +46,3 @@ Other BSWF weighted wavebands: \code{\link{CH4}},
   \code{\link{GEN_M}}, \code{\link{ICNIRP}},
   \code{\link{PG}}
 }
-

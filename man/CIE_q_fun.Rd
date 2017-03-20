@@ -22,7 +22,6 @@ quantum based effectiveness relative units.
 \examples{
 CIE_q_fun(293:400)
 
-
 }
 \seealso{
 Other BSWF functions: \code{\link{CH4_e_fun}},
@@ -32,4 +31,3 @@ Other BSWF functions: \code{\link{CH4_e_fun}},
   \code{\link{GEN_M_q_fun}}, \code{\link{GEN_T_q_fun}},
   \code{\link{ICNIRP_e_fun}}, \code{\link{PG_q_fun}}
 }
-

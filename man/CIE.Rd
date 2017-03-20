@@ -2,7 +2,7 @@
 % Please edit documentation in R/cie.r
 \name{CIE}
 \alias{CIE}
-\title{Definition of CIE weighted waveband}
+\title{Constructor of CIE weighted waveband}
 \usage{
 CIE(norm = 298, w.low = 250, w.high = 400)
 }
@@ -38,4 +38,3 @@ Other BSWF weighted wavebands: \code{\link{CH4}},
   \code{\link{GEN_T}}, \code{\link{ICNIRP}},
   \code{\link{PG}}
 }
-

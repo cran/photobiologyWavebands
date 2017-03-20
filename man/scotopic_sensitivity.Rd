@@ -16,4 +16,3 @@ Constant value for human vision under very weak illumination
 A single numeric value
 }
 \keyword{datasets}
-

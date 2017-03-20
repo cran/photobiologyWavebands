@@ -54,4 +54,3 @@ Other BSWF functions: \code{\link{CH4_e_fun}},
   \code{\link{GEN_G_q_fun}}, \code{\link{GEN_T_q_fun}},
   \code{\link{ICNIRP_e_fun}}, \code{\link{PG_q_fun}}
 }
-

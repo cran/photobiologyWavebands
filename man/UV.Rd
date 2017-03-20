@@ -2,7 +2,7 @@
 % Please edit documentation in R/uv.r
 \name{UV}
 \alias{UV}
-\title{Definition of UV waveband}
+\title{Constructor of UV waveband}
 \usage{
 UV(std = "ISO")
 }
@@ -28,9 +28,8 @@ ISO and CIE standards
 
 Other unweighted wavebands: \code{\link{Blue}},
   \code{\link{Far_red}}, \code{\link{Green}},
-  \code{\link{Orange}}, \code{\link{Purple}},
-  \code{\link{Red}}, \code{\link{UVA}}, \code{\link{UVB}},
-  \code{\link{UVC}}, \code{\link{VIS}},
-  \code{\link{Yellow}}
+  \code{\link{IR}}, \code{\link{Orange}},
+  \code{\link{Purple}}, \code{\link{Red}},
+  \code{\link{UVA}}, \code{\link{UVB}}, \code{\link{UVC}},
+  \code{\link{VIS}}, \code{\link{Yellow}}
 }
-

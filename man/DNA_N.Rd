@@ -2,7 +2,7 @@
 % Please edit documentation in R/dna.n.r
 \name{DNA_N}
 \alias{DNA_N}
-\title{Definition of DNA damage (SETLOW) weighted waveband}
+\title{Constructor of DNA damage (SETLOW) weighted waveband}
 \usage{
 DNA_N(norm = 300, w.low = 275, w.high = 400)
 }
@@ -35,4 +35,3 @@ Other BSWF weighted wavebands: \code{\link{CH4}},
   \code{\link{GEN_T}}, \code{\link{ICNIRP}},
   \code{\link{PG}}
 }
-

@@ -2,7 +2,7 @@
 % Please edit documentation in R/icnirp.r
 \name{ICNIRP}
 \alias{ICNIRP}
-\title{Definition of ICNIRP 2004 weighted waveband}
+\title{Constructor of ICNIRP 2004 weighted waveband}
 \usage{
 ICNIRP(norm = 270, w.low = 210, w.high = 400)
 }
@@ -44,4 +44,3 @@ Other BSWF weighted wavebands: \code{\link{CH4}},
   \code{\link{GEN_M}}, \code{\link{GEN_T}},
   \code{\link{PG}}
 }
-

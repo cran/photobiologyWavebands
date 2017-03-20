@@ -2,7 +2,7 @@
 % Please edit documentation in R/gen.m.r
 \name{GEN.M}
 \alias{GEN.M}
-\title{Definition of GPAS (Micheletti) weighted waveband}
+\title{Constructor of GPAS (Micheletti) weighted waveband}
 \usage{
 GEN.M(norm = 300, w.low = 275, w.high = 313.3)
 }
@@ -13,4 +13,3 @@ Generalized Plant Action BSWF of Caldwell as formulated by Micheletti et al.
 \code{\link{GEN_M}}
 }
 \keyword{internal}
-

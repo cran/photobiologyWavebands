@@ -2,12 +2,12 @@
 % Please edit documentation in R/uv.bands.r
 \name{UV_bands}
 \alias{UV_bands}
-\title{Definition of list of UV wavebands}
+\title{Constructor of lists of UV wavebands}
 \usage{
 UV_bands(std = "ISO")
 }
 \arguments{
-\item{std}{a character string "ISO" or "none"}
+\item{std}{a character string "ISO", "CIE", "medical" or "none".}
 }
 \value{
 a list of wavebands
@@ -18,12 +18,15 @@ Defined according to "ISO".
 \examples{
 UV_bands()
 UV_bands("ISO")
+UV_bands("CIE")
+UV_bands("medical")
+UV_bands("none")
 
 }
 \seealso{
 \code{\link[photobiology]{waveband}}
 
-Other lists of unweighted wavebands: \code{\link{Plant_bands}},
+Other lists of unweighted wavebands: \code{\link{IR_bands}},
+  \code{\link{Landsat_bands}}, \code{\link{Plant_bands}},
   \code{\link{VIS_bands}}
 }
-

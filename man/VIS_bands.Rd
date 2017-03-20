@@ -2,12 +2,12 @@
 % Please edit documentation in R/vis.bands.r
 \name{VIS_bands}
 \alias{VIS_bands}
-\title{Definition of list of VIS wavebands}
+\title{Contructor of lists of VIS wavebands}
 \usage{
 VIS_bands(std = "ISO")
 }
 \arguments{
-\item{std}{a character string "ISO" (ignored)}
+\item{std}{a character string "ISO".}
 }
 \value{
 a list of wavebands
@@ -21,7 +21,7 @@ VIS_bands("ISO")
 
 }
 \seealso{
-Other lists of unweighted wavebands: \code{\link{Plant_bands}},
+Other lists of unweighted wavebands: \code{\link{IR_bands}},
+  \code{\link{Landsat_bands}}, \code{\link{Plant_bands}},
   \code{\link{UV_bands}}
 }
-

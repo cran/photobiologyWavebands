@@ -21,4 +21,3 @@ The variables are as follows:
 \url{http://uv.biospherical.com/Version2/description-Version2-Database3.html} downloaded 2015-02-07
 }
 \keyword{datasets}
-

@@ -2,12 +2,13 @@
 % Please edit documentation in R/green.r
 \name{Green}
 \alias{Green}
-\title{Definition of green waveband}
+\title{Constructor of green waveband}
 \usage{
 Green(std = "ISO")
 }
 \arguments{
-\item{std}{a character string "ISO", "Sellaro" or "Plant"}
+\item{std}{a character string "ISO", "Sellaro" or "LandsatRBV", and
+equivalent names for Landsat imagers.}
 }
 \value{
 a waveband object wavelength defining a wavelength range.
@@ -29,9 +30,9 @@ Green("Sellaro") # 500 to 570 nm
 \code{\link[photobiology]{waveband}}
 
 Other unweighted wavebands: \code{\link{Blue}},
-  \code{\link{Far_red}}, \code{\link{Orange}},
-  \code{\link{Purple}}, \code{\link{Red}},
-  \code{\link{UVA}}, \code{\link{UVB}}, \code{\link{UVC}},
-  \code{\link{UV}}, \code{\link{VIS}}, \code{\link{Yellow}}
+  \code{\link{Far_red}}, \code{\link{IR}},
+  \code{\link{Orange}}, \code{\link{Purple}},
+  \code{\link{Red}}, \code{\link{UVA}}, \code{\link{UVB}},
+  \code{\link{UVC}}, \code{\link{UV}}, \code{\link{VIS}},
+  \code{\link{Yellow}}
 }
-

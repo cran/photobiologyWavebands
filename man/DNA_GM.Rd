@@ -2,7 +2,7 @@
 % Please edit documentation in R/dna.gm.r
 \name{DNA_GM}
 \alias{DNA_GM}
-\title{Definition of DNA damage (SETLOW) weighted waveband}
+\title{Constructor of DNA damage (SETLOW) weighted waveband}
 \usage{
 DNA_GM(norm = 300, w.low = 275, w.high = 400)
 }
@@ -35,4 +35,3 @@ Other BSWF weighted wavebands: \code{\link{CH4}},
   \code{\link{GEN_T}}, \code{\link{ICNIRP}},
   \code{\link{PG}}
 }
-

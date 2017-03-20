@@ -2,7 +2,7 @@
 % Please edit documentation in R/gen.g.r
 \name{GEN.G}
 \alias{GEN.G}
-\title{Definition of GPAS (Green) weighted waveband}
+\title{Constructor of GPAS (Green) weighted waveband}
 \usage{
 GEN.G(norm = 300, w.low = 275, w.high = 313.3)
 }
@@ -13,4 +13,3 @@ Generalized Plant Action BSWF of Caldwell as formulated by Green et al.
 \code{\link{GEN_G}}
 }
 \keyword{internal}
-

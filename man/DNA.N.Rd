@@ -2,7 +2,7 @@
 % Please edit documentation in R/dna.n.r
 \name{DNA.N}
 \alias{DNA.N}
-\title{Definition of DNA damage (SETLOW) weighted waveband}
+\title{Constructor of DNA damage (SETLOW) weighted waveband}
 \usage{
 DNA.N(norm = 300, w.low = 275, w.high = 400)
 }
@@ -13,4 +13,3 @@ Naked DNA damage BSWF
 \code{\link{DNA_N}}
 }
 \keyword{internal}
-
