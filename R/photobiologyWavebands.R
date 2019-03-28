@@ -21,12 +21,15 @@
 #' package \code{\link[photobiology]{photobiology-package}}
 #'
 #' @references
+#' Aphalo, Pedro J. (2015) The r4photobiology suite. UV4Plants Bulletin, 2015:1,
+#' 21-29. \url{https://doi.org/10.19232/uv4pb.2015.1.14}.
+#'
 #' Aphalo, P. J., Albert, A., Björn, L. O., McLeod, A. R., Robson, T. M.,
 #' Rosenqvist, E. (Eds.). (2012). Beyond the Visible: A handbook of best
 #' practice in plant UV photobiology (1st ed., p. xxx + 174). Helsinki:
 #' University of Helsinki, Department of Biosciences, Division of Plant Biology.
 #' ISBN 978-952-10-8363-1 (PDF), 978-952-10-8362-4 (paperback). Open access PDF
-#' download available at http://hdl.handle.net/10138/37558
+#' download available at https://hdl.handle.net/10138/37558
 #'
 #' Caldwell, M. M. (1971) Solar UV irradiation and the growth and development
 #' of higher plants. In Giese, A. C. (Ed.) Photophysiology, Academic Press,
@@ -51,7 +54,7 @@
 #' International Commission on Non-Ionizing Radiation Protection (2004) ICNIRP
 #' Guidelines on Limits of Exposure to Ultraviolet Radiation of Wavelengths
 #' Between 180 nm And 400 nm (Incoherent Optical Radiation). Health Physics
-#' 87(2):171-186. \url{http://www.icnirp.org/cms/upload/publications/ICNIRPUV2004.pdf}
+#' 87(2):171-186. \url{https://www.icnirp.org/cms/upload/publications/ICNIRPUV2004.pdf}
 #'
 #' ISO (2007) Optics and photonics - Spectral bands. ISO Standard 20473:2007.
 #' ISO, Geneva.
@@ -61,7 +64,7 @@
 #'
 #' Quaite, F. E., Sutherland, B. M., Sutherland, J. C. Action spectrum for DNA
 #' damage in alfalfa lowers predicted impact of ozone depletion. Nature, 1992,
-#' 358, 576–578
+#' 358, 576-578
 #'
 #' Leutner, B. and Horning, N. (2016). RStoolbox: Tools for Remote Sensing Data
 #' Analysis. R package version 0.1.6.
@@ -99,7 +102,7 @@
 #' Review of Plant Physiology, 33:481-518.
 #'
 #' USGS (nd) Landsat 8 Science Data Users Handbook.
-#' \url{https://landsat.usgs.gov/sites/default/files/documents/Landsat8DataUsersHandbook.pdf}.
+#' \url{https://www.usgs.gov/media/files/landsat-8-data-users-handbook}.
 #' Visited on 2016-12-26.
 #'
 #' Webb, A. R.; Slaper, H.; Koepke, P. & Schmalwieser, A. W. Know your standard:

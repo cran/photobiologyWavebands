@@ -35,3 +35,4 @@ Other unweighted wavebands: \code{\link{Blue}},
   \code{\link{UVA}}, \code{\link{UVC}}, \code{\link{UV}},
   \code{\link{VIS}}, \code{\link{Yellow}}
 }
+\concept{unweighted wavebands}

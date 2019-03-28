@@ -35,3 +35,4 @@ Other BSWF weighted wavebands: \code{\link{CIE}},
   \code{\link{GEN_T}}, \code{\link{ICNIRP}},
   \code{\link{PG}}
 }
+\concept{BSWF weighted wavebands}

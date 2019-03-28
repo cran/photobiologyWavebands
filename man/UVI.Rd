@@ -41,10 +41,10 @@ round(UVI(sun.spct), 0)
 \references{
 WHO (2002) Global Solar UV Index: A Practical Guide. ISBN 92 4
 159007 6, WHO, Geneva.
-\url{http://www.who.int/uv/publications/globalindex/en/} or
+\url{https://www.who.int/uv/publications/globalindex/en/} or
 \url{http://uv.biospherical.com/Solar_Index_Guide.pdf}.
 
 P. Kiedron, S. Stierle and K. Lantz (2007) Instantaneous UV Index and Daily
 UV Dose Calculations. NOAA-EPA Brewer Network.
-\url{http://www.esrl.noaa.gov/gmd/grad/neubrew/docs/UVindex.pdf}
+\url{https://www.esrl.noaa.gov/gmd/grad/neubrew/docs/UVindex.pdf}
 }

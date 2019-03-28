@@ -46,3 +46,4 @@ Other BSWF weighted wavebands: \code{\link{CH4}},
   \code{\link{GEN_M}}, \code{\link{ICNIRP}},
   \code{\link{PG}}
 }
+\concept{BSWF weighted wavebands}

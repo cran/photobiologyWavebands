@@ -32,7 +32,7 @@ INTERNATIONAL COMMISSION ON NON-IONIZING RADIATION PROTECTION (2004) ICNIRP
   GUIDELINES ON LIMITS OF EXPOSURE TO ULTRAVIOLET RADIATION OF WAVELENGTHS
   BETWEEN 180 nm AND 400 nm (INCOHERENT OPTICAL RADIATION). HEALTH PHYSICS
   87(2):171-186.
-  \url{http://www.icnirp.org/cms/upload/publications/ICNIRPUV2004.pdf}
+  \url{https://www.icnirp.org/cms/upload/publications/ICNIRPUV2004.pdf}
 }
 \seealso{
 \code{\link{new_waveband}}  \code{\link{waveband}}
@@ -44,3 +44,4 @@ Other BSWF weighted wavebands: \code{\link{CH4}},
   \code{\link{GEN_M}}, \code{\link{GEN_T}},
   \code{\link{PG}}
 }
+\concept{BSWF weighted wavebands}

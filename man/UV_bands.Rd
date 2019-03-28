@@ -7,19 +7,20 @@
 UV_bands(std = "ISO")
 }
 \arguments{
-\item{std}{a character string "ISO", "CIE", "medical" or "none".}
+\item{std}{a character string "ISO", "CIE", "medical", "plants" or "none".}
 }
 \value{
 a list of wavebands
 }
 \description{
-Defined according to "ISO".
+Defined according to "ISO" by default, but other definitions also supported.
 }
 \examples{
 UV_bands()
 UV_bands("ISO")
 UV_bands("CIE")
 UV_bands("medical")
+UV_bands("plants")
 UV_bands("none")
 
 }
@@ -30,3 +31,4 @@ Other lists of unweighted wavebands: \code{\link{IR_bands}},
   \code{\link{Landsat_bands}}, \code{\link{Plant_bands}},
   \code{\link{VIS_bands}}
 }
+\concept{lists of unweighted wavebands}
