@@ -4,7 +4,9 @@
 \name{photopic_sensitivity}
 \alias{photopic_sensitivity}
 \title{Photopic sensitivity of the human eye}
-\format{A single numeric value}
+\format{
+A single numeric value
+}
 \usage{
 photopic_sensitivity
 }

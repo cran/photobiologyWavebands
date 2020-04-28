@@ -31,11 +31,16 @@ Webb, A. (20XX)
 \seealso{
 \code{\link[photobiology]{waveband}}
 
-Other BSWF weighted wavebands: \code{\link{CH4}},
-  \code{\link{DNA_GM}}, \code{\link{DNA_N}},
-  \code{\link{DNA_P}}, \code{\link{FLAV}},
-  \code{\link{GEN_G}}, \code{\link{GEN_M}},
-  \code{\link{GEN_T}}, \code{\link{ICNIRP}},
-  \code{\link{PG}}
+Other BSWF weighted wavebands: 
+\code{\link{CH4}()},
+\code{\link{DNA_GM}()},
+\code{\link{DNA_N}()},
+\code{\link{DNA_P}()},
+\code{\link{FLAV}()},
+\code{\link{GEN_G}()},
+\code{\link{GEN_M}()},
+\code{\link{GEN_T}()},
+\code{\link{ICNIRP}()},
+\code{\link{PG}()}
 }
 \concept{BSWF weighted wavebands}

@@ -4,7 +4,9 @@
 \name{SetlowTUV.spct}
 \alias{SetlowTUV.spct}
 \title{Setlow's action spectrum for DNA damage}
-\format{A response.spct object with 1082 rows and 2 variables}
+\format{
+A response.spct object with 1082 rows and 2 variables
+}
 \description{
 A dataset containing the wavelengths at a 0.1 nm interval. Tabulated values
 for Setlow's naked DNA damage action spectrum as used in the TUV model.

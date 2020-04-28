@@ -4,7 +4,9 @@
 \name{CIE1924_lef.spct}
 \alias{CIE1924_lef.spct}
 \title{CIE1924 luminous efficiency function (photopic human vision)}
-\format{A response.spct object with 471 rows and 2 variables}
+\format{
+A response.spct object with 471 rows and 2 variables
+}
 \description{
 A dataset containing the wavelengths at a 1 nm interval.
 Tabulated values for quantum luminous efficiency according to CIE1924.

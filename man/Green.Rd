@@ -29,11 +29,18 @@ Green("Sellaro") # 500 to 570 nm
 \seealso{
 \code{\link[photobiology]{waveband}}
 
-Other unweighted wavebands: \code{\link{Blue}},
-  \code{\link{Far_red}}, \code{\link{IR}},
-  \code{\link{Orange}}, \code{\link{Purple}},
-  \code{\link{Red}}, \code{\link{UVA}}, \code{\link{UVB}},
-  \code{\link{UVC}}, \code{\link{UV}}, \code{\link{VIS}},
-  \code{\link{Yellow}}
+Other unweighted wavebands: 
+\code{\link{Blue}()},
+\code{\link{Far_red}()},
+\code{\link{IR}()},
+\code{\link{Orange}()},
+\code{\link{Purple}()},
+\code{\link{Red}()},
+\code{\link{UVA}()},
+\code{\link{UVB}()},
+\code{\link{UVC}()},
+\code{\link{UV}()},
+\code{\link{VIS}()},
+\code{\link{Yellow}()}
 }
 \concept{unweighted wavebands}

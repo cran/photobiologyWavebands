@@ -4,7 +4,9 @@
 \name{scotopic_sensitivity}
 \alias{scotopic_sensitivity}
 \title{Scotopic sensitivity of the human eye}
-\format{A single numeric value}
+\format{
+A single numeric value
+}
 \usage{
 scotopic_sensitivity
 }

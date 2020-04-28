@@ -86,7 +86,7 @@
 #' Acta Horticulturae, 418, ISHS 1997.
 #'
 #' NASA (nd) Landsat 7 Science Data Users Handbook.
-#' \url{landsat.gsfc.nasa.gov/wp-content/uploads/2016/08/Landsat7_Handbook.pdf}
+#' \url{https://landsat.gsfc.nasa.gov/wp-content/uploads/2016/08/Landsat7_Handbook.pdf}
 #' Visited on 2016-12-26.
 #'
 #' Sellaro, R., Crepy, M., Trupkin, S. A., Karayekov, E., Buchovsky, A. S.,
@@ -103,7 +103,7 @@
 #'
 #' USGS (nd) Landsat 8 Science Data Users Handbook.
 #' \url{https://www.usgs.gov/media/files/landsat-8-data-users-handbook}.
-#' Visited on 2016-12-26.
+#' Visited on 2020-04-28.
 #'
 #' Webb, A. R.; Slaper, H.; Koepke, P. & Schmalwieser, A. W. Know your standard:
 #' clarifying the CIE erythema action spectrum. Photochemistry and photobiology,

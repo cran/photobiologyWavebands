@@ -4,7 +4,9 @@
 \name{CIE1951_scotopic_lef.spct}
 \alias{CIE1951_scotopic_lef.spct}
 \title{Luminous efficiency function (scotopic human vision)}
-\format{A response.spct object with 401 rows and 2 variables}
+\format{
+A response.spct object with 401 rows and 2 variables
+}
 \description{
 A dataset containing the wavelengths at a 1 nm interval. Tabulated values for
 quantum luminous efficiency at low light levels according to CIE1951.

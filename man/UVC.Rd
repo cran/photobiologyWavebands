@@ -28,11 +28,18 @@ UVC("medical")
 \seealso{
 \code{\link{new_waveband}}  \code{\link{waveband}}
 
-Other unweighted wavebands: \code{\link{Blue}},
-  \code{\link{Far_red}}, \code{\link{Green}},
-  \code{\link{IR}}, \code{\link{Orange}},
-  \code{\link{Purple}}, \code{\link{Red}},
-  \code{\link{UVA}}, \code{\link{UVB}}, \code{\link{UV}},
-  \code{\link{VIS}}, \code{\link{Yellow}}
+Other unweighted wavebands: 
+\code{\link{Blue}()},
+\code{\link{Far_red}()},
+\code{\link{Green}()},
+\code{\link{IR}()},
+\code{\link{Orange}()},
+\code{\link{Purple}()},
+\code{\link{Red}()},
+\code{\link{UVA}()},
+\code{\link{UVB}()},
+\code{\link{UV}()},
+\code{\link{VIS}()},
+\code{\link{Yellow}()}
 }
 \concept{unweighted wavebands}

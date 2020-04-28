@@ -46,11 +46,16 @@ Photobiology, 78, 456-461
 \seealso{
 \code{\link{new_waveband}} and \code{\link{waveband}}
 
-Other BSWF weighted wavebands: \code{\link{CH4}},
-  \code{\link{CIE}}, \code{\link{DNA_GM}},
-  \code{\link{DNA_N}}, \code{\link{DNA_P}},
-  \code{\link{FLAV}}, \code{\link{GEN_G}},
-  \code{\link{GEN_T}}, \code{\link{ICNIRP}},
-  \code{\link{PG}}
+Other BSWF weighted wavebands: 
+\code{\link{CH4}()},
+\code{\link{CIE}()},
+\code{\link{DNA_GM}()},
+\code{\link{DNA_N}()},
+\code{\link{DNA_P}()},
+\code{\link{FLAV}()},
+\code{\link{GEN_G}()},
+\code{\link{GEN_T}()},
+\code{\link{ICNIRP}()},
+\code{\link{PG}()}
 }
 \concept{BSWF weighted wavebands}

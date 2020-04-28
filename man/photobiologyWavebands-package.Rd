@@ -108,7 +108,7 @@ artificial lighting conditions. Proc. Int. Symp. Artificial Lighting,
 Acta Horticulturae, 418, ISHS 1997.
 
 NASA (nd) Landsat 7 Science Data Users Handbook.
-\url{landsat.gsfc.nasa.gov/wp-content/uploads/2016/08/Landsat7_Handbook.pdf}
+\url{https://landsat.gsfc.nasa.gov/wp-content/uploads/2016/08/Landsat7_Handbook.pdf}
 Visited on 2016-12-26.
 
 Sellaro, R., Crepy, M., Trupkin, S. A., Karayekov, E., Buchovsky, A. S.,
@@ -125,7 +125,7 @@ Review of Plant Physiology, 33:481-518.
 
 USGS (nd) Landsat 8 Science Data Users Handbook.
 \url{https://www.usgs.gov/media/files/landsat-8-data-users-handbook}.
-Visited on 2016-12-26.
+Visited on 2020-04-28.
 
 Webb, A. R.; Slaper, H.; Koepke, P. & Schmalwieser, A. W. Know your standard:
 clarifying the CIE erythema action spectrum. Photochemistry and photobiology,
@@ -134,18 +134,18 @@ clarifying the CIE erythema action spectrum. Photochemistry and photobiology,
 \seealso{
 Useful links:
 \itemize{
-  \item \url{http://www.r4photobiology.info/}
+  \item \url{https://docs.r4photobiology.info/photobiologyWavebands/}
   \item \url{https://bitbucket.org/aphalo/photobiologywavebands}
   \item Report bugs at \url{https://bitbucket.org/aphalo/photobiologywavebands/issues}
 }
 
 }
 \author{
-\strong{Maintainer}: Pedro J. Aphalo \email{pedro.aphalo@helsinki.fi} (0000-0003-3385-972X)
+\strong{Maintainer}: Pedro J. Aphalo \email{pedro.aphalo@helsinki.fi} (\href{https://orcid.org/0000-0003-3385-972X}{ORCID})
 
 Other contributors:
 \itemize{
-  \item Titta K. Kotilainen \email{titta.kotilainen@helsinki.fi} (0000-0002-2822-9734) [contributor]
+  \item Titta K. Kotilainen \email{titta.kotilainen@helsinki.fi} (\href{https://orcid.org/0000-0002-2822-9734}{ORCID}) [contributor]
 }
 
 }

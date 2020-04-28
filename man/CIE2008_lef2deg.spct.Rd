@@ -4,7 +4,9 @@
 \name{CIE2008_lef2deg.spct}
 \alias{CIE2008_lef2deg.spct}
 \title{CIE2008 luminous efficiency function (2-deg) (photopic human vision)}
-\format{A response.spct object with 441 rows and 2 variables}
+\format{
+A response.spct object with 441 rows and 2 variables
+}
 \description{
 A dataset containing the wavelengths at a 1 nm interval.
 Tabulated values for quantum luminous efficiency according to CIE2008 for 2 degrees.
