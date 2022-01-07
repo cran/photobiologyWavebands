@@ -1,39 +1,52 @@
 
-# photobiologyWavebands
+# photobiologyWavebands <img src="man/figures/logo.png" align="right" width="120" />
+
+<!-- badges: start -->
 
 [![CRAN
 version](https://www.r-pkg.org/badges/version-last-release/photobiologyWavebands)](https://cran.r-project.org/package=photobiologyWavebands)
 [![cran
 checks](https://cranchecks.info/badges/worst/photobiologyWavebands)](https://cran.r-project.org/web/checks/check_results_photobiologyWavebands.html)
+[![R-CMD-check](https://github.com/aphalo/photobiologyWavebands/workflows/R-CMD-check/badge.svg)](https://github.com/aphalo/photobiologyWavebands/actions)
+<!-- badges: end -->
 
-Package ‘**photobiologyWavebands**’ is a set of functions and data to be
-used together with package ‘**photobiology**’ for calculation of derived
-quantities from spectral data. Non-weighed derived quantities represent
-summaries of a given range of wavelengths. All constructors default to
-ISO standardized definitions when they are available, but other
-competing definitions are also available. These additional definitions
-include the wavelength ranges used by Landsat satellite imagers, as
-these may be needed to approximate remote-sensing-related index
-calculations on spectral data.
+Package ‘**photobiologyWavebands**’ supplies a set of functions and data
+to be used together with package ‘**photobiology**’ for calculation of
+derived quantities from spectral data. Non-weighed derived quantities
+represent summaries of a given range of wavelengths. All constructors
+default to ISO standardized definitions when they are available, but
+other competing definitions are also available though parameter `std` of
+the constructors of waveband objects. These constructors are specialized
+versions of the `photobiology::waveband()` constructor.
 
-Derived *biologically effective* quantities are used to quantify the
-effect of radiation on different organisms or processes within
-organisms. These effects can range from damage to perception of
-informational light signals. Except for the definition of the erythemal
-and vitamin-D spectra for which CIE definitions exist, those
-formulations that we consider the most frequently used are the default.
-Weighting functions included in the package are the luminous efficiency
-functions for human vision and several biological spectral weighting
-functions (BSWFs) used to estimate effective UV doses.
+In photobiology, derived *biologically effective* quantities are used to
+quantify the effect of radiation on different organisms or processes
+within organisms. These effects can range from damage to perception of
+informational light signals.
 
-The definitions cover most non-weighted wavebands in common use, and in
-addition many weighting functions used in the calculation of effective
-irradiances and exposures. The current version of the package puts
-emphasis, in the case of weighting functions, on a subset of those in
-use, but in the future the package will be expanded to included
-responses relevant to additional groups of organisms. Colour-response
-and colour-matching functions for human vision and bee vision are
-included in package ‘**photobiology**’.
+The definitions cover most non-weighted wavebands in common use, like
+those corresponding ultraviolet, visible and infrared, the light colours
+seen by humans, photosynthetically active radiation and some other bands
+of interest for plants. Several wavebands corresponding to remote
+sensing instruments are also provided, including all those for the
+LANDSAT missions.
+
+Definitions also include many weighting functions used in the
+calculation of effective irradiances and exposures. Weighting functions
+included in the package are several biological spectral weighting
+functions (BSWFs) used to estimate effective UV doses. Except for the
+definition of the erythemal and vitamin-D action spectra for which
+definitions standardized by CIE exist, the default formulation is one
+commonly used. It is important to keep in mind that mathematical
+formulations and extrapolation rules in use are not unique and that it
+is important to carefully chose the most appropriate one and report
+exactly which one was used. We hope this package will make this easier.
+
+Colour-response and colour-matching functions for human vision and bee
+vision are included in package ‘**photobiology**’. Absorbance spectra
+for plant photoreceptors and some common plant pigments, as well as
+action spectra for photosynthesis are included in package
+‘**photobiologyPlants**’.
 
 ## Installation
 
@@ -46,8 +59,8 @@ install.packages("photobiologyWavebands")
 Installation of the current unstable version from Bitbucket:
 
 ``` r
-# install.packages("devtools")
-devtools::install_bitbucket("aphalo/photobiologyWavebands")
+# install.packages("remotes")
+remotes::install_github("aphalo/photobiologyWavebands")
 ```
 
 ## Documentation
@@ -75,12 +88,12 @@ handbook of best practice in plant UV photobiology (1st ed., p. xxx +
 174). Helsinki: University of Helsinki, Department of Biosciences,
 Division of Plant Biology. ISBN 978-952-10-8363-1 (PDF),
 978-952-10-8362-4 (paperback). PDF file available from
-(<http://doi.org/10.31885/9789521083631>).
+(<https://doi.org/10.31885/9789521083631>).
 
 ## Contributing
 
 Pull requests, bug reports, and feature requests are welcome at
-(<https://bitbucket.org/aphalo/photobiologyWavebands>).
+(<https://github.com/aphalo/photobiologyWavebands>).
 
 ## Citation
 
@@ -111,6 +124,6 @@ citation("photobiologyWavebands")
 
 ## License
 
-© 2012-2020 Pedro J. Aphalo (<pedro.aphalo@helsinki.fi>). Released under
+© 2012-2022 Pedro J. Aphalo (<pedro.aphalo@helsinki.fi>). Released under
 the GPL, version 2 or greater. This software carries no warranty of any
 kind.
