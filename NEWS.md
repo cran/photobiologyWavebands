@@ -4,9 +4,24 @@ editor_options:
     wrap: 72
 ---
 
+# photobiologyWavebands 0.5.4
+
+- Bug fix in `PQYR_q_fun` and thus in `PAR()` or `PQYR()`, affecting only the
+"Yield Photon Density" computation, new in 0.5.3.
+
+# photobiologyWavebands 0.5.3
+
+-   Rebuild data objects with 'photobiology' (0.13.2)
+-   Support in `Red()` and `Far_red()` the definitions used by 
+[Apogee](https://www.apogeeinstruments.com/red-far-red-and-par-far-sensors/)
+for its sensors.
+-   Implement "Yield Photon Density" using mean photon action spectra from
+McCree as BSWFs, selected with arguments passed to parameter `std` in functions
+`PAR()` or `PQYR()`.
+
 # photobiologyWavebands 0.5.2
 
--   Rebuild data objects with 'photobiology' (0.11.0)
+-   Rebuild data objects with 'photobiology' (0.11.0).
 
 # photobiologyWavebands 0.5.1
 

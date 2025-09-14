@@ -13,7 +13,7 @@ VIS(std = "ISO")
 A waveband object wavelength defining a wavelength range.
 }
 \description{
-Visible (to humnas) radiation (380...760 nm) according to ISO standard
+Visible (to humans) radiation (380...760 nm) according to ISO standard
 definition, no weighting applied. For \code{std = "RS"} the returned range is
 the same as for \code{PAR()}. The panchromatic bands of Landsat missions are
 also supported.
@@ -37,10 +37,10 @@ Other unweighted wavebands:
 \code{\link{Orange}()},
 \code{\link{Purple}()},
 \code{\link{Red}()},
+\code{\link{UV}()},
 \code{\link{UVA}()},
 \code{\link{UVB}()},
 \code{\link{UVC}()},
-\code{\link{UV}()},
 \code{\link{Yellow}()}
 }
 \concept{unweighted wavebands}
